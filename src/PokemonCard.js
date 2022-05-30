@@ -5,9 +5,7 @@ import {useFlip} from './hooks'
 /* Renders a single pokemon card. */
 function PokemonCard({ front, back, name, stats }) {
   const [isFacingUp, setIsFacingUp] = useFlip();
-  // const flipCard = () => {
-  //   setIsFacingUp(isUp => !isUp);
-  // };
+  
   return (
     <div onClick={setIsFacingUp} className="PokemonCard Card">
       {isFacingUp ? (
